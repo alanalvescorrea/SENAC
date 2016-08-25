@@ -1,46 +1,46 @@
-Aula 1 ñ Listando os vendedores que efetuaram vendas entre 10/01/2000 e 15/01/2000:  Revis„o SQL
+Aula 1 ‚Äì Listando os vendedores que efetuaram vendas entre 10/01/2000 e 15/01/2000:  Revis√£o SQL
 
 1.	lista todos os produtos:
 
-2.	lista todas as comissıes que pagam mais de 5%
+2.	lista todas as comiss√µes que pagam mais de 5%
 
-3.	Lista os valores distintos de sal·rio de vendedores
+3.	Lista os valores de sal√°rio de vendedores
 
-4.	Lista os valores distintos de sal·rio de vendedores e indicar que valores repetidos devem ser suprimidos
+4.	Lista os valores distintos de sal√°rio de vendedores e indicar que valores repetidos devem ser suprimidos
 
-5.	lista os cÛdigos dos vendedores das vendas efetuadas em 15/01/2000
+5.	lista os c√≥digos dos vendedores das vendas efetuadas em 15/01/2000
 
 6.	Lista os vendedores que efetuaram vendas entre 10/01/2000 e 15/01/2000:
 
-7.	Contando a quantidade de memÛrias da marca Kingston:
+7.	Contando a quantidade de mem√≥rias da marca Kingston:
 
-8.	Calculando a mÈdia dos preÁos das memÛrias Kingston:
+8.	Calculando a m√©dia dos pre√ßos das mem√≥rias Kingston:
 
-9.	Encontrar o menor preÁo de uma memÛria Kingston:
+9.	Encontrar o menor pre√ßo de uma mem√≥ria Kingston:
 
-10.	Encontrando o maior preÁo de uma memÛria Kingston:
+10.	Encontrando o maior pre√ßo de uma mem√≥ria Kingston:
 
-11.	Lista nome e sal·rio de todos os vendedores
+11.	Lista nome e sal√°rio de todos os vendedores
 
-12.	Listar nome dos vendedores por ordem alfabÈtica crescente
+12.	Listar nome dos vendedores por ordem alfab√©tica crescente
 
-13.	Listar nome dos vendedores por ordem alfabÈtica decrescente
+13.	Listar nome dos vendedores por ordem alfab√©tica decrescente
 
-14.	ordenar primeiro pelo sal·rio em ordem decrescente. ApÛs, as linhas que apresentarem um mesmo valor de sal·rio, ordenar pelo nome em ordem crescente
+14.	ordenar primeiro pelo sal√°rio em ordem decrescente. Ap√≥s, as linhas que apresentarem um mesmo valor de sal√°rio, ordenar pelo nome em ordem crescente
 
-15.	Listar todas as informaÁıes de produtos apresentando apenas as primeiras 5 linhas
+15.	Listar todas as informa√ß√µes de produtos apresentando apenas as primeiras 5 linhas
 
 16.	Repetir a consulta anterior, mostrando as 5 linhas seguintes.
 
-17.	mostrar os dados do vendedor cujo cÛdigo È 1
+17.	mostrar os dados do vendedor cujo c√≥digo √© 1
 
 18.	Listar dados dos vendedores que recebem $ 500,00
 
-19.	dados dos vendedores que recebem mais de $ 600,00 fixo por mÍs
+19.	dados dos vendedores que recebem mais de $ 600,00 fixo por m√™s
 
 20.	Listar vendas efetuadas em 10 de janeiro de 2000
 
-21.	Filtrando dados dos vendedores por intervalo de sal·rio entre $500,00 e $600,00
+21.	Filtrando dados dos vendedores por intervalo de sal√°rio entre $500,00 e $600,00
 
 
 
