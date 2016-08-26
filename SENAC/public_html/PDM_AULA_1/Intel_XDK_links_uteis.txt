@@ -1,0 +1,11 @@
+XDK DOWNLOAD
+https://software.intel.com/pt-br/intel-xdk 
+
+DESENVOLVIMENTO EM HTML5
+https://software.intel.com/html5
+
+DEVELOPER ZONE
+https://software.intel.com/pt-br
+
+CURSO HTM5 W3C
+http://www.w3c.br/pub/Cursos/CursoHTML5/html5-web.pdf
