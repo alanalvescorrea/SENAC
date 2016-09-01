@@ -1,0 +1,8 @@
+Links Úteis TRIGGER
+https://www.youtube.com/watch?v=JOnkvqUaNOU
+http://www.linhadecodigo.com.br/artigo/3567/mysql-basico-triggers.aspx
+http://ajuda.locaweb.com.br/pt-br/Exemplo_de_como_criar_uma_trigger_no_Mysql
+
+Links Úteis VIEW
+https://www.youtube.com/watch?v=m1C8c8QRz4s
+http://satellasoft.com/?materia=trabalhando-com-view-no-mysql
