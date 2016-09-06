@@ -1,0 +1,17 @@
+essa cláusula define qual algoritmo interno utilizar para processar a View quando a mesma for executada.
+
+CREATE [OR REPLACE] [ALGORITHM = algorithm_type] VIEW
+
+UNDEFINED	-	MERGE	-	TEMPTABLE
+
+UNDEFINED - é geralmente mais eficiente porque não pode ser atualizado se uma tabela temporária é usada.
+UNDEFINED, MySQL chooses which algorithm to use. It prefers MERGE over TEMPTABLE if possible, because MERGE is usually more efficient and because a view cannot be updatable if a temporary table is used.
+
+MERGE - o texto de uma declaração que se refere à vista e a definição de exibição são mescladas de tal forma que as partes da definição vista substituir as partes correspondentes do comunicado.
+MERGE, the text of a statement that refers to the view and the view definition are merged such that parts of the view definition replace corresponding parts of the statement.
+
+TEMPTABLE - os resultados sao enviados para uma tabela temporaria, que depois é usada para executar o comando
+TEMPTABLE, the results from the view are retrieved into a temporary table, which then is used to execute the statement.
+
+
+http://dev.mysql.com/doc/refman/5.7/en/view-algorithms.html

@@ -1,0 +1,83 @@
+Trigguer 
+
+definição 
+significa gatilho, e um objeto do banco de dados que é associado a uma tabela. este procedimentro so é invocado quando um procedimento DML(insert,update,delete) é executado. 
+
+ 2>Criar um Trigger em MySQL e comentar comandos.
+
+
+//criar tabela livro
+create table livro{
+//essa tabela tera 4 campos, o id, o nome do livro,o preço normal e com desconto.(real) 
+idlivro INT NOT NULL  AUTO_INCREMENT;
+// o id sera incerido automaticamente ao inserir um livro no banco de dados.
+nome_livro VARCHAR(45)NULL;
+preco_normal DECIMAL(10,2)NULL;
+preco_desconto DECIMAL(10.2)NULL;
+//o id tambem sera a chave primaria
+PRIMARY KEI (idlivro);
+}
+// este TRIGGER  tem como objetivo calcular o desconto automaticamente cada vez que for inserido no banco de dados um novo "livro"
+
+// a (tr) é uma abreviação de TRIGGER tendo como objetivo, facilitar na lembrança do que esse TRIGGER esta realizando no banco de dados facilitando assim a manutençao do codigo.
+// o BEFRORE, indica que antes de terminar a inserçao do livro no banco de dados, se calculado o desconto. 
+// é no INSERT que a TIGGER vai disparado, e isso acontece toda vez que o usuario fizer um INSERT na tabela.
+CREATE TIGGER tr_desconto BEFRORE INSERT
+// o "ON" indica a tabela que sera realizado o INSERT. que neste caso sera realizado na tabela livro.  
+ON livro
+// para cada linha que for inserida (FOR EACH ROW)
+FOR EACH ROW
+// O SER indica que eu quero que configure o preço do disconto, ou seja que ele multiplique o preço normal com uma determinada porcentagem e nisso se da o desconto de cada livro inserido na tabela.
+// a palavra NEW significa que nem o preco desconto e nem o preco normal existem no banco de dados, é por esse motivo que se usa a palavra NEW.
+SER NEW.preco_desconto = (NEW.preco_normal * 0.90);
+// o INSERT ira  o livro cujo o nome é "jogos" que tem o valor de 25 reais. 
+INSERT INTO livro (nome_livro,preco_normal)
+VALUES ('jogos',25.00);
+// o SELECT FROM´ele seleciona tudo que esta no banco de dados e lhe mostra na tela.
+SELECT * FROM livro;
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+3> Excluir um Trigger em MySQL e comentar comandos;
+// codigo que teria a ideia de excluir meu livro da tabela.
+DELETE FROM livro WHERE nome_livro = 1 AND livro = 1
+
+CONECÇÃO DO PHP COM O MAYSQL.
+
+
+$vConexao = mysqli_connect($vnome_livro, $vpreco_normal, $vpreco_desconto);
+
+// eu php estou conversando com o mysql quando eu dou essa resposta se posso entrar ou nao (eu guardo na conecao)
+// esse if verifica se vai ter problemas ou nao para entrar. 
+ 
+
+if (!$vConexao) {die('Problemas na conexão: ' . mysqli_connect_error());}
+
+//Cria a base de dados
+$vSql='CREATE DATABASE livro;';
+$vResultado = mysqli_query($vConexao, $vSql);
+echo('Base de dados criada com sucesso!');
+
+
+VIEWS
+
+definição.
+
+se trata de uma exibiçao de uma tabela virtual que é baseada num conjuntos de resultados de uma consulta em maysql.embora seja uma tabela para vizualização, ela permite com que voce de comandos normais assim como se faz com as de mais tabelas, o interesante que os Views mostram sempre os resultados atualizados devido ao fato de que a visao nao armazena os dados, ela é criado no momento que é feita a invocação dela.
+
+
+2>Criar um VIEWS em MySQL e comentar comandos.
+// esta visao tem como objetivo consultar apenas a tabela livros
+CREATE VIEW vw_livros
+// o AS significa COMO.
+AS SELECT tbl_livro.nome_livros AS livro,
+FROM tbl_livro
+ON tbl_livro.ID;
+// o que vai realmente execitar esse codigo e um select..
+SELECT livro
+FROM vw_livros;
+// podemos usar tambem um ORDER BY com o objetivo de mostrar toda a nossa tabela de livros em ordem alfabetica.
+
+3> Excluir um VIEWS em MySQL e comentar comandos.
+
+// /para excluir é so usar o drop.
+DROP VIEW vw_livros

@@ -1,0 +1,105 @@
+Obs.: Observ,e no exercício 1, que o apelido “p” foi dado à tabela produto. Embora “p” tenha sido utilizado, qualquer outro apelido poderia ter sido escolhido para a tabela produto. É muito útil e comum a utilização de apelidos curtos para os nomes das tabelas, a fim de compactar a escrita de algumas instruções select mais complexas. Por este motivo, adotaremos a utilização de apelidos em todas as consultas envolvendo tabelas.
+
+
+1. lista todos os produtos:
+select * from produto p
+
+
+1. lista todas as comissões que pagam mais de 5%
+select * from comissao c where (c.comissao >= 5);
+
+
+1. Lista os valores distintos de salário de vendedores
+select r.salario from vendedor r;
+
+
+1. Lista os valores distintos de salário de vendedores e indicar que valores repetidos devem ser suprimidos
+select distinct r.salario from vendedor r;
+
+
+1. lista os códigos dos vendedores das vendas efetuadas em 15/01/2000
+select v.vendedor from venda v where (v.dia = '2000-01-15');
+
+
+1. Lista os vendedores que efetuaram vendas entre 10/01/2000 e 15/01/2000:
+select r.nome from vendedor r where (r.codigo in (select v.vendedor from venda v where (v.dia between '2000-01-10' and '2000-01-15')));
+ou
+select nome from vendedor where (codigo in (select vendedor from venda where (dia between '2000-01-10' and '2000-01-15')));
+
+
+1. Contando a quantidade de memórias da marca Kingston:
+select count(*) as quantidade from produto p where (p.descricao like '%mem%kingston%');
+ou
+select count(*) from produto where (descricao like '%mem%kingston%')
+
+
+1. Calculando a média dos preços das memórias Kingston:
+select round(avg(p.preco),2) as preco_medio from produto p where (p.descricao like '%mem%kingston%');
+
+
+1. Encontrar o menor preço de uma memória Kingston:
+select min(p.preco) as menor_preco from produto p where (p.descricao like '%mem%kingston%');
+
+
+
+
+1. Encontrando o maior preço de uma memória Kingston:
+select max(p.preco) as maior_preco from produto p where (p.descricao like '%mem%kingston%');
+
+
+1. Lista nome e salário de todos os vendedores
+select nome, salario from vendedor
+
+
+1. Listar nome dos vendedores por ordem alfabética crescente
+select * from vendedor r order by r.nome asc;
+
+
+1. Listar nome dos vendedores por ordem alfabética decrescente
+select * from vendedor r order by r.nome desc;
+
+
+1. ordenar primeiro pelo salário em ordem decrescente. Após, as linhas que apresentarem um mesmo valor de salário, ordenar pelo nome em ordem crescente
+select * from vendedor r order by r.salario desc,r.nome asc;  
+
+
+1. Listar todas as informações de produtos apresentando apenas as primeiras 5 linhas
+select * from produto p limit 5 offset 0;
+
+
+1. Repetir a consulta anterior, mostrando as 5 linhas seguintes.
+select * from produto p limit 5 offset 5;
+
+
+1. mostrar os dados do vendedor cujo código é 1
+select * from vendedor r where (r.codigo = 1);
+
+
+1. Listar dados dos vendedores que recebem $ 500,00
+select * from vendedor r where (r.salario = 500.00);
+
+
+1. dados dos vendedores que recebem mais de $ 600,00 fixo por mês
+select * from vendedor r where (r.salario > 600.00);
+
+
+1. Listar vendas efetuadas em 10 de janeiro de 2000
+select * from venda  where (dia = '2000-01-10');
+
+
+1. Filtrando dados dos vendedores por intervalo de salário entre $500,00 e $600,00
+
+
+select * from vendedor r where (r.salario >= 500.00) and (r.salario <= 600.00);
+ou
+select * from vendedor r where (r.salario between 500.00 and 600.00);
+
+
+
+
+DESAFIO 1:  Simular um aumento de 17% no salário fixo mensal dos vendedores, mostrado com o formato usual para valores monetários.
+select codigo,nome,round(salario,2) as salario,round(salario*1.17,2) as novo_salario from vendedor
+
+
+DESAFIO 2: Simular um desconto de 10% no preço das memórias Kingston, mostrado com o formato usual para valores monetários.
+select codigo,descricao,round(preco,2) as preco,comissao,round(preco*0.9,2) as novo_preco from produto where (descricao like '%mem%kingston%');
