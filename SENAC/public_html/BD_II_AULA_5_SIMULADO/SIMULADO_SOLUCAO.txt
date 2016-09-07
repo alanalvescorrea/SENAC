@@ -1,0 +1,81 @@
+SOLUÇÂO SIMULADO
+1.
+Linguagem de Consulta Estruturada, uma linguagem padrão de gerenciamento de dados que interage 
+com os principais bancos de dados baseados no modelo relacional.
+
+2. 
+select titulo, autor, datalan from livros order by titulo
+
+3.
+select * from livros where year(datalan) = 2011 or year(datalan)=2012
+
+4.
+insert into alunos(nome, email, fone)
+values("Patrícia dos Santos", "pat@terra.com.br", "9104.3050")
+
+5.
+select * from livros where titulo like "%Redes%"
+
+6.
+Criação de 3 tabelas com seus atributos e definição das chaves primárias
+
+7.
+Criação de uma view com produtos que tenham quantidade maior que 2 itens.
+
+8.
+Tipo especial de procedimento armazenado.
+a. Validação de dados (tipo de dados, faixa de valor)
+b. Rastreamento de dados (logs de tabelas)
+c. Arquivamento de registro excluídos (tabela extra)
+
+9.
+CREATE VIEW nome_da_visao
+AS SELECT colunas
+FROM tabela
+WHERE condições;
+
+10.
+$mysqli = new mysqli(MYSQL_HOSTNAME, MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_DATABASE);
+$mysqli_query("DROP TRIGGER trigger1");
+$sql = "
+   CREATE TRIGGER trigger1 BEFORE INSERT ON account
+      FOR EACH ROW 
+	  BEGIN
+   		INSERT INTO log_table_change (
+            `table`,
+            `table_id`,
+            `user`
+            )
+         VALUES (
+            'account_entered',
+            NEW.account_id,
+            'test_user'
+            );
+      END;
+   ";
+$mysqli_multi_query($sql);
+$mysqli_query("INSERT INTO account (username) values ('asdasdasd')");
+$mysqli_close();
+
+11.
+CREATE VIEW vwProdutos
+AS
+SELECT idProduto AS Código,
+	Nome AS Produto,
+	Fabricante,
+	Quantidade,
+	VlUnitario AS[ValorUnitario],
+	Tipo
+FROM
+	Produtos
+WHERE
+	VlUnitario > 499.00
+	
+12.
+Procedimento armazenado ou Stored Procedure é uma coleção de comandos em SQL para dispensamento de Banco de dados. 
+Encapsula tarefas repetitivas, aceita parâmetros de entrada e retorna um valor de status (para indicar aceitação ou falha na execução). 
+O procedimento armazenado pode reduzir o tráfego na rede, visto que os comandos são executados diretamente no servidor. 
+Além de melhorar a performance, criar mecanismos de segurança entre a manipulação dos dados do Banco de Dados.
+
+13.
+	
