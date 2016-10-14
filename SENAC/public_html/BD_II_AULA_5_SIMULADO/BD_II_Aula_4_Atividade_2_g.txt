@@ -1,1 +1,0 @@
-'trigger' e uma operação atralada a uma tabela e acionada quando voçe utiliza um comando pre-determinado pela trigger nesta tabela executando outra função.

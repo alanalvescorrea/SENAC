@@ -1,2 +1,0 @@
-https://dumps.wikimedia.org/enwiki/latest/
-http://respostas.guj.com.br/15056-base-de-dados-para-teste

@@ -1,2 +1,0 @@
-DESAFIO 1:  Simular um aumento de 17% no salário fixo mensal dos vendedores, mostrado com o formato usual para valores monetários.
-DESAFIO 2: Simular um desconto de 10% no preço das memórias Kingston, mostrado com o formato usual para valores monetários.
