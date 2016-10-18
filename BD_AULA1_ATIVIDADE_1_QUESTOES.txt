@@ -1,0 +1,47 @@
+Aula 1 – Listando os vendedores que efetuaram vendas entre 10/01/2000 e 15/01/2000:  Revisão SQL
+
+1.	lista todos os produtos:
+
+2.	lista todas as comissões que pagam mais de 5%
+
+3.	Lista os valores de salário de vendedores
+
+4.	Lista os valores distintos de salário de vendedores e indicar que valores repetidos devem ser suprimidos
+
+5.	lista os códigos dos vendedores das vendas efetuadas em 15/01/2000
+
+6.	Lista os vendedores que efetuaram vendas entre 10/01/2000 e 15/01/2000:
+
+7.	Contando a quantidade de memórias da marca Kingston:
+
+8.	Calculando a média dos preços das memórias Kingston:
+
+9.	Encontrar o menor preço de uma memória Kingston:
+
+10.	Encontrando o maior preço de uma memória Kingston:
+
+11.	Lista nome e salário de todos os vendedores
+
+12.	Listar nome dos vendedores por ordem alfabética crescente
+
+13.	Listar nome dos vendedores por ordem alfabética decrescente
+
+14.	ordenar primeiro pelo salário em ordem decrescente. Após, as linhas que apresentarem um mesmo valor de salário, ordenar pelo nome em ordem crescente
+
+15.	Listar todas as informações de produtos apresentando apenas as primeiras 5 linhas
+
+16.	Repetir a consulta anterior, mostrando as 5 linhas seguintes.
+
+17.	mostrar os dados do vendedor cujo código é 1
+
+18.	Listar dados dos vendedores que recebem $ 500,00
+
+19.	dados dos vendedores que recebem mais de $ 600,00 fixo por mês
+
+20.	Listar vendas efetuadas em 10 de janeiro de 2000
+
+21.	Filtrando dados dos vendedores por intervalo de salário entre $500,00 e $600,00
+
+
+
+
