@@ -1,0 +1,16 @@
+Estou compartilhando como vocês alguns vídeos bem curtinhos e bem didáticos que irão ajudar bastante. 
+Cada vídeo tem menos de 10 minutos e estão comentados e com exemplos práticos.
+
+https://youtu.be/5sTFJHOSDvg?list=PLucm8g_ezqNrWAQH2B_0AnrFY5dJcgOLR (CONSULTAS SIMPLES)
+https://youtu.be/XytX5Ok9qGU?list=PLucm8g_ezqNrWAQH2B_0AnrFY5dJcgOLR (FILTRANDO COM CLÁUSULA WHERE)
+https://youtu.be/RMv2V6RG4vw?list=PLucm8g_ezqNrWAQH2B_0AnrFY5dJcgOLR (FUNÇÕES MAX, MIN, AVG, COUNT, SUM)
+https://youtu.be/lNvzhgT0l28?list=PLucm8g_ezqNrWAQH2B_0AnrFY5dJcgOLR (FILTRANDO COM CLÁUSULA BETWEEN)
+https://youtu.be/zyfuDf4atxQ?list=PLucm8g_ezqNrWAQH2B_0AnrFY5dJcgOLR (FILTRANDO COM CLÁUSULA LIKE)
+https://youtu.be/qAtiTGjxrcA?list=PLucm8g_ezqNrWAQH2B_0AnrFY5dJcgOLR (FILTRANDO COM CLÁUSULA ORDER BY)
+
+Esse próximo vídeo é super bem explicado sobre o que é banco dados, tabelas, campos e registros:
+https://youtu.be/m9YPlX0fcJk?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r
+
+O que precisar pode chamar aqui no e-mail, no skype (alanalvescorrea) ou no Hangouts do gmail.
+
+Até!
